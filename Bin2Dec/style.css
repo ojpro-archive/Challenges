@@ -1,0 +1,65 @@
+/* Store static styles */
+:root {
+    --primary-color: #4ae742;
+}
+/* Reset all browser default styles */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Change Interface background to black */
+body {
+    background-color: #020204;
+}
+
+/* Convertor Container fields styles */
+.convertor {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Style all inputs under convertor div */
+.convertor>input {
+    width: 100%;
+    height: 30%;
+    margin: 2rem;
+    border-radius: 4px;
+    color: var(--primary-color);
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 0 1rem;
+    background: transparent;
+    border: 8px solid var(--primary-color);
+}
+
+/* Change default inputs placeholder color */
+.convertor input::placeholder {
+    color: var(--primary-color);
+}
+
+/*  Style convert button */
+.convertor button {
+    display: block;
+    width: fit-content;
+    height: 8rem;
+    color: white;
+    padding: 2px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 50%;
+    cursor: pointer;
+    background: transparent;
+    border: 4px solid var(--primary-color);
+}
