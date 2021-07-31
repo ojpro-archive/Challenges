@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Simple Calculator using JavaScript</h1>
+        <div class="calculator">
+            <div class="board">
+                <table>
+                    <tr>
+                        <td colspan="4"><input type="text" class="expression" disabled></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><input type="text" class="resualt" disabled></td>
+                    </tr>
+                        <td><button onclick="clearScreen()">&nbsp;C&nbsp;</button></td>
+                        <td><button onclick="clearE()">CE</button></td>
+                        <td><button onclick="put('%')">%&nbsp;</button></td>
+                        <td><button onclick="put('*')">&nbsp;×&nbsp;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="put(7)">7</button></td>
+                        <td><button onclick="put(8)">8</button></td>
+                        <td><button onclick="put(9)">9</button></td>
+                        <td><button onclick="put('/')">&div;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="put(4)">4</button></td>
+                        <td><button onclick="put(5)">5</button></td>
+                        <td><button onclick="put(6)">6</button></td>
+                        <td><button onclick="put('-')">&minus;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="put(1)">1</button></td>
+                        <td><button onclick="put(2)">2</button></td>
+                        <td><button onclick="put(3)">3</button></td>
+                        <td><button onclick="put('+')">&plus;</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><button onclick="put('.')">.</button></td>
+                        <td colspan="2"><button onclick="put(0)">0</button></td>
+                        <td><button onclick="equal()">&equals;</button></td>
+                    </tr>
+                </table>
+            </div>
+            <strong class="typing-method">Typing using the mouse.</strong>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
