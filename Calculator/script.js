@@ -82,6 +82,6 @@ window.addEventListener("keydown", (e) => {
   }
   // If Backspace prassed clear the screen
   if(e.key === "Backspace"){
-    clearScreen()
+    clearE()
   }
 });
